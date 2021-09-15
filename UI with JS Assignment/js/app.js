@@ -7,7 +7,7 @@ $.getJSON("https://www.swollenhippo.com/getEmployeesByAPIKey.php?APIKey=Mickey20
 
 function buildEmployeeCard(){
     $.each(arrEmployees,function(i,person){ //itterate following for each employee in dataset
-        if(person.FirstName != 'John'){
+        {
             let strHTML = '<div class="card col-3 ml-2 mr-2 mt-5">';
             strHTML += '<img src="images/profile.jpg" alt="Profile Picture" style="margin:auto; max-width:100%;">';
             strHTML += '<h3 class="text-center"><a href="mailto:' + person.Email + '">' + person.FirstName + ' ' + person.LastName + '</a></h3>';
